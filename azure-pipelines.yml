@@ -3,8 +3,8 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javaresources:
 
-queue:
-  name: Default
+pool:
+  vmImage: 'ubuntu-16.04' # Hosted Ubuntu 1604
   demands: maven
 
 steps:
